@@ -30,12 +30,12 @@ const withFacebook: ConfigPlugin<ConfigProps | void> = (config, props) => {
 
   // iOS
   config = withFacebookIOS(config, newProps);
-  config = withUserTrackingPermission(config, newProps);
+  // config = withUserTrackingPermission(config, newProps);
   // https://developers.facebook.com/docs/SKAdNetwork
-  config = withSKAdNetworkIdentifiers(config, [
-    'v9wttpbfk9.skadnetwork',
-    'n38lu8286q.skadnetwork',
-  ]);
+  // config = withSKAdNetworkIdentifiers(config, [
+  //   'v9wttpbfk9.skadnetwork',
+  //   'n38lu8286q.skadnetwork',
+  // ]);
 
   return config;
 };
